@@ -3,6 +3,7 @@ layout: page
 title: About
 permalink: /about/
 ---
+<img src="images/yingchen.JPG" alt="drawing" width="200" class="center"/>
 
 I am an ML engineer based in the bay area and I am passionate about using ML algorithms and data to help companies and individuals make better decisions. I have worked on various applications including dynamic pricing, personalized content recommendations as well as user targeting. 
 
