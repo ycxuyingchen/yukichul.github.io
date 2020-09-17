@@ -11,4 +11,4 @@ I am an ML engineer based in the bay area and I am passionate about using ML alg
 
 Before I moved to California, I did my undergraduate studies in CS and Math at Rice University. I also spent the majority of my senior year doing research on applying randomized hashing algorithms to solving large scaled machine learning problems. 
 
-More recently, I became very interested in human learning and how understanding it can inspire building intelligent machines. I'm currently exploring the intersection of cognitive science and ML while working as a research assistant at professor Tobias Gerstenberg's lab at Stanford University.  
+More recently, I became very interested in human learning and how understanding it can inspire building intelligent machines. I'm currently exploring the intersection of cognitive science and ML while working as a research assistant at professor [Tobias Gerstenberg's lab](http://cicl.stanford.edu/#home) at Stanford University.  
