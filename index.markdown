@@ -3,8 +3,8 @@ layout: page
 title: About me
 order: 0
 ---
-<p class="aligncenter">
-<img src="/images/yingchen.JPG" alt="profile" width="200"/>
+<p align="center">
+<img src="/images/yingchen.JPG" alt="profile" width="200" style="border-radius:50%"/>
 </p>
 
 I am an ML engineer based in the bay area working on various applications including 
