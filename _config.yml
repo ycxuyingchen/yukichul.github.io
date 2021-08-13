@@ -28,9 +28,7 @@ twitter_username: YingchenX
 github_username:  yukichul
 
 # Build settings
-theme: minima
-plugins:
-  - jekyll-feed
+theme: academic
 
 # Exclude from processing.
 # The following items will not be processed, by default.
