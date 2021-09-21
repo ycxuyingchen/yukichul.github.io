@@ -21,7 +21,7 @@
 title: Yingchen Xu
 email: yingchenxu20@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  This is the homepage of Yingchen Xu.
+  Homepage of Yingchen Xu, a CS PhD student at UCL and FAIR London.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://yukichul.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: YingchenX
