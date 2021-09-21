@@ -3,7 +3,7 @@ layout: page
 order: 0
 ---
 <p align="center">
-<img src="/images/yingchen.JPG" alt="profile" width="200" style="border-radius:50%"/>
+<img src="/images/yingchen.JPG" alt="Yingchen Xu" width="200" style="border-radius:50%"/>
 </p>
 
 I am a first year CS PhD student at University College London (UCL) supervised by [Edward Grefenstette](https://www.egrefen.com/), [Tim Rockstäschel](https://rockt.github.io/) and [Marc Deisenroth](https://deisenroth.cc/). I am also a Research Assistnt at [Facebook AI Research (FAIR)](https://ai.facebook.com/blog/fair-unveils-uk-phd-program-in-partnership-with-ucl/) Labs. My research interests mostly lie in model-based reinforcement learning and causality in ML. I'm also generally curious about human learning and how it can inspire building intelligent machines. 
