@@ -31,6 +31,7 @@ github_username:  yukichul
 theme: minima
 plugins:
   - jekyll-feed
+  - jemoji
 
 header_pages:
   - index.markdown
