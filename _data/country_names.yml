@@ -307,7 +307,7 @@
 -
   index: 'map_62'
   country_name: 'GREECE'
-  visited: false
+  visited: true
 
 -
   index: 'map_63'
@@ -507,7 +507,7 @@
 -
   index: 'map_102'
   country_name: 'MALTA'
-  visited: false
+  visited: true
 
 -
   index: 'map_103'
@@ -827,7 +827,7 @@
 -
   index: 'map_166'
   country_name: 'TURKEY'
-  visited: false
+  visited: true
 
 -
   index: 'map_167'
