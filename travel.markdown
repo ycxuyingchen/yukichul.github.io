@@ -5,7 +5,7 @@ permalink: /travel/
 order: 2
 ---
 
-I've been to :cn: :us: :canada: :uk: :jp: :kr: :mexico: :thailand: :fr: :de: :belgium: :netherlands: :es: :portugal: :it: :vatican_city: :bulgaria: :palau: :bolivia: :peru: :costa_rica:
+I've been to :cn: :us: :canada: :uk: :jp: :kr: :mexico: :thailand: :fr: :de: :belgium: :netherlands: :es: :portugal: :it: :vatican_city: :bulgaria: :palau: :bolivia: :peru: :costa_rica: :malta: :tr: :greece:
 
 <head>
 <link rel="stylesheet" href="../assets/custom.css"/>
