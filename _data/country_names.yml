@@ -767,7 +767,7 @@
 -
   index: 'map_154'
   country_name: 'SWEDEN'
-  visited: false
+  visited: true
 
 -
   index: 'map_155'
