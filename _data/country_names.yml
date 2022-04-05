@@ -417,7 +417,7 @@
 -
   index: 'map_84'
   country_name: 'KOSOVO'
-  visited: false
+  visited: true
 
 -
   index: 'map_85'
@@ -476,8 +476,8 @@
 
 -
   index: 'map_96'
-  country_name: 'MACEDONIA'
-  visited: false
+  country_name: 'NORTH MACEDONIA'
+  visited: true
 
 -
   index: 'map_97'
@@ -537,7 +537,7 @@
 -
   index: 'map_108'
   country_name: 'MONTENEGRO'
-  visited: false
+  visited: true
 
 -
   index: 'map_109'
@@ -687,7 +687,7 @@
 -
   index: 'map_138'
   country_name: 'SERBIA'
-  visited: false
+  visited: true
 
 -
   index: 'map_139'
