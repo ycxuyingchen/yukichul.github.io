@@ -642,7 +642,7 @@
 -
   index: 'map_129'
   country_name: 'POLAND'
-  visited: false
+  visited: true
 
 -
   index: 'map_130'
