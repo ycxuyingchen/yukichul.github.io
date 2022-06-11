@@ -257,7 +257,7 @@
 -
   index: 'map_52'
   country_name: 'ESTONIA'
-  visited: false
+  visited: true
 
 -
   index: 'map_53'
@@ -272,7 +272,7 @@
 -
   index: 'map_55'
   country_name: 'FINLAND'
-  visited: false
+  visited: true
 
 -
   index: 'map_56'
