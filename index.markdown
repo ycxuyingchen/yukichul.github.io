@@ -6,10 +6,9 @@ order: 0
 <img src="/images/yingchen.png" alt="Yingchen Xu" width="200" style="border-radius:50%"/>
 </p>
 
-I am a first year CS PhD student at University College London (UCL) supervised by [Edward Grefenstette](https://www.egrefen.com/) and [Tim Rockstäschel](https://rockt.github.io/). I am also a PhD Researcher at [Meta AI Labs](https://ai.facebook.com/). My research goal is to build machines that can learn to accomplish tasks efficiently in unknown, complex, sparse-reward environments. I'm also generally curious about human learning and how it can inspire building intelligent machines. 
+I am a first year CS PhD student at University College London (UCL) supervised by [Edward Grefenstette](https://www.egrefen.com/) and [Tim Rockstäschel](https://rockt.github.io/), as well as a PhD Researcher at [Meta AI Labs](https://ai.facebook.com/). I do research in deep reinforcement learning, with a current focus on **world models**, **generalization** and **data efficiency**.
 
-Before starting my PhD, I was an ML engineer based in the bay area working on various applications including 
-dynamic pricing and content recommendations. I did my undergraduate studies in CS and Math at Rice University, where I also did research on applying randomized hashing algorithms to solving large scaled machine learning problems. 
+Before starting my PhD, I studied CS and Math at Rice University and also spent some time working on applied ML in the bay area. 
 
 &nbsp;
 &nbsp;
@@ -20,6 +19,6 @@ dynamic pricing and content recommendations. I did my undergraduate studies in C
 
 **Y. Xu**, J. Parker-Holder, A. Pacchiano, P. J. Ball, O. Rybkin, S. J. Roberts, T. Rocktäschel, E. Grefenstette (2022). **Learning General World Models in a Handful of Reward-Free Deployments**. In NeurIPS.
 
-B. Chen, **Y. Xu**, A. Shrivastava (2019). [LGD: Fast and Accurate Stochastic Gradient Estimation](https://papers.nips.cc/paper/2019/hash/a1e865a9b1065392ed6035d8ccd072d9-Abstract.html). In NeurIPS.
+B. Chen, **Y. Xu**, A. Shrivastava (2019). **[LGD: Fast and Accurate Stochastic Gradient Estimation](https://papers.nips.cc/paper/2019/hash/a1e865a9b1065392ed6035d8ccd072d9-Abstract.html)**. In NeurIPS.
 
-A. Beller, **Y. Xu**, S. Linderman, T. Gerstenberg (2022). [Looking into the past: Eye-tracking mental simulation in physical inference](https://escholarship.org/uc/item/7gk617ss). In Cognitive Science. 
+A. Beller, **Y. Xu**, S. Linderman, T. Gerstenberg (2022). **[Looking into the past: Eye-tracking mental simulation in physical inference](https://escholarship.org/uc/item/7gk617ss)**. In Cognitive Science. 
