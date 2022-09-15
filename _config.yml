@@ -19,17 +19,22 @@
 # in the templates via {{ site.myvariable }}.
 
 title: Yingchen Xu
-email: yingchen.xu.21@ucl.ac.uk
+author:
+  name: Yingchen Xu
+  email: yingchen.xu.21@ucl.ac.uk
 description: >- # this means to ignore newlines until "baseurl:"
   Homepage of Yingchen Xu, a CS PhD student at UCL and FAIR London.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://yukichul.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: YingchenX
-github_username:  yukichul
+# twitter_username: YingchenX
+# github_username:  yukichul
 minima:
   social_links:
-    scholar_userid: -CqyjXEAAAAJ
+    google_scholar_id: -CqyjXEAAAAJ
+    github: yukichul
+    twitter: YingchenX
     instagram: ycxuxu
+  skin: auto
 
 # Build settings
 theme: minima
