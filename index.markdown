@@ -10,3 +10,16 @@ I am a first year CS PhD student at University College London (UCL) supervised b
 
 Before starting my PhD, I was an ML engineer based in the bay area working on various applications including 
 dynamic pricing and content recommendations. I did my undergraduate studies in CS and Math at Rice University, where I also did research on applying randomized hashing algorithms to solving large scaled machine learning problems. 
+
+&nbsp;
+&nbsp;
+
+# Publications
+
+<!-- :mortar_board:[Google Scholar Profile](https://scholar.google.com/citations?user=-CqyjXEAAAAJ&hl=en) -->
+
+**Y. Xu**, J. Parker-Holder, A. Pacchiano, P. J. Ball, O. Rybkin, S. J. Roberts, T. Rocktäschel, E. Grefenstette (2022). **Learning General World Models in a Handful of Reward-Free Deployments**. In NeurIPS.
+
+B. Chen, **Y. Xu**, A. Shrivastava (2019). [LGD: Fast and Accurate Stochastic Gradient Estimation](https://papers.nips.cc/paper/2019/hash/a1e865a9b1065392ed6035d8ccd072d9-Abstract.html). In NeurIPS.
+
+A. Beller, **Y. Xu**, S. Linderman, T. Gerstenberg (2022). [Looking into the past: Eye-tracking mental simulation in physical inference](https://escholarship.org/uc/item/7gk617ss). In Cognitive Science. 
