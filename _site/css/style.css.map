@@ -5,10 +5,10 @@
 		"style.scss",
 		"minima/skins/auto.scss",
 		"minima/initialize.scss",
-		"../../../usr/local/lib/ruby/gems/3.0.0/bundler/gems/minima-fdc3aba23a1d/_sass/minima/custom-variables.scss",
-		"../../../usr/local/lib/ruby/gems/3.0.0/bundler/gems/minima-fdc3aba23a1d/_sass/minima/_base.scss",
-		"../../../usr/local/lib/ruby/gems/3.0.0/bundler/gems/minima-fdc3aba23a1d/_sass/minima/_layout.scss",
-		"../../../usr/local/lib/ruby/gems/3.0.0/bundler/gems/minima-fdc3aba23a1d/_sass/minima/custom-styles.scss"
+		"_sass/minima/custom-variables.scss",
+		"_sass/minima/_base.scss",
+		"_sass/minima/_layout.scss",
+		"_sass/minima/custom-styles.scss"
 	],
 	"sourcesContent": [
 		"@import\n  \"minima/skins/auto\",\n  \"minima/initialize\";\n",
