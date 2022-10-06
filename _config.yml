@@ -47,6 +47,9 @@ header_pages:
   - research.markdown
   - travel.markdown
   - read.markdown
+  - cascade.markdown
+  
+full-width: true
 
 # Exclude from processing.
 # The following items will not be processed, by default.

@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Yingchen Xu | Homepage of Yingchen Xu, a CS PhD student at UCL and FAIR London.</title>
+<meta name="generator" content="Jekyll v4.1.1" />
+<meta property="og:title" content="Yingchen Xu" />
+<meta name="author" content="Yingchen Xu" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Homepage of Yingchen Xu, a CS PhD student at UCL and FAIR London." />
+<meta property="og:description" content="Homepage of Yingchen Xu, a CS PhD student at UCL and FAIR London." />
+<link rel="canonical" href="http://localhost:4000/cascade/" />
+<meta property="og:url" content="http://localhost:4000/cascade/" />
+<meta property="og:site_name" content="Yingchen Xu" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Yingchen Xu" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"Yingchen Xu"},"description":"Homepage of Yingchen Xu, a CS PhD student at UCL and FAIR London.","headline":"Yingchen Xu","url":"http://localhost:4000/cascade/"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Yingchen Xu" />
+</head>
+<body><header class="site-header">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Yingchen Xu</a></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title"></h1>
+  </header>
+
+  <div class="post-content">
+    <style>
+header{
+    display:none;
+}
+footer{
+	display: none;
+}
+.image-left {
+      display: block;
+      margin-left: auto;
+      margin-right: 20px;
+      float: left;
+      height: 290px;
+    }
+
+body {
+  color: #000000;
+ /* font-family: 'Computer Modern Serif','Droid Sans', Helvetica, Arial, sans-serif;*/
+  font-weight: normal;
+  font-size: 1.125rem;
+  position: relative;
+  background-color: #FFFFFF;
+  /*max-width: 100%;*/
+  content-width: 100%;
+  /*line-height: 1.2;*/
+}
+
+.content-container {
+	content-width: 100%;
+	padding: 1.5rem 1.5rem;
+}
+</style>
+
+<h1 align="center">
+Learning General World Model in a Handful of Reward-free Deployments
+</h1>
+
+<h5 align="center">
+Yingchen Xu*, Jack Parker-Holder*,  Aldo Pacchiano*,  Phillip J. Ball*,  Oleh Rybkin
+<br />
+Stephen J. Roberts, Tim Rocktäschel, Edward Grefenstette
+</h5>
+
+<h5 align="center">
+	NeurIPS 2022
+</h5>
+
+<center>
+	<a href="https://github.com/ycxuyingchen/cascade">[Paper]</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;                
+<a href="https://github.com/ycxuyingchen/cascade">[Code]</a>
+</center>
+
+<h2 align="center">
+Abstract
+</h2>
+
+<p>Building generally capable agents is a grand challenge for deep reinforcement learning (RL). To approach this challenge practically, we outline two key desiderata: 1) to facilitate generalization, exploration should be task agnostic; 2) to facilitate scalability, exploration policies should collect large quantities of data without costly centralized retraining. Combining these two properties, we introduce the reward-free deployment efficiency setting, a new paradigm for RL research. We then present CASCADE, a novel approach for self-supervised exploration in this new setting. CASCADE seeks to learn a world model by collecting data with a population of agents, using an information theoretic objective inspired by Bayesian Active Learning. CASCADE achieves this by specifically maximizing the diversity of trajectories sampled by the population through a novel cascading objective. We show a tabular version of CASCADE theoretically improves upon naïve approaches that do not account for population diversity. We then demonstrate that CASCADE collects diverse task-agnostic datasets and learns agents that generalize zero-shot to novel, unseen downstream tasks on Atari, MiniGrid and the DM Control Suite.</p>
+
+<p align="center">
+<img src="/images/cascade_explanation_simplified.gif" alt="cascade" />
+</p>
+
+<hr />
+
+<h3 align="center">
+Reward-Free Deployment Efficiency
+</h3>
+
+<p><strong>Goal</strong>: Train generalist agents at scale.</p>
+
+<ul>
+  <li>
+    <p>To make agents general, we want to collect reward-free data. This makes it possible to solve a wide variety of tasks which may have different reward functions.</p>
+  </li>
+  <li>
+    <p>To make our methods scale, we want to collect data in parallel and update our policy infrequently.</p>
+  </li>
+</ul>
+
+<p><strong>Current methods</strong>: Plan2Explore trains the exploration policy online, updating every timestep. It has generality but not scalability.</p>
+
+<hr />
+
+<h3 align="center">
+<strong>C</strong>oordinated <strong>A</strong>ctive <strong>S</strong>ample <strong>C</strong>ollection vi<strong>a</strong> <strong>D</strong>iverse <strong>E</strong>xplorers
+</h3>
+
+<p><img align="left" src="/images/CASCADE_motivation.jpg" class="image-left" />
+Imagine that we want to learn a model of a room. Green areas represent high expected information gain . A population of independently trained agents will likely all follow the trajectory to #1 at deployment.</p>
+
+<p>To avoid collecting a homogenous dataset in such cases, CASCADE trains agents by taking into account the population diversity, in addition to  the information gain, and thus encourages an individual agent to sample states that maximally improve the world model.</p>
+
+<hr />
+
+<h3 align="center">
+Data Diveristy
+</h3>
+
+<p>Each row below visualizes data collected by a population of explorers trained by the <strong>same</strong> world model, deployed at the <strong>same</strong> time in the <strong>same</strong> environment.</p>
+
+<p>We can see that <strong>CASCADE</strong> explorers discover different parts of the world and display diverse nontrivial behaviors. On the contrary, <strong>Plan2Explore</strong> agents (trained without considering population diversity) collect only homogenous data.</p>
+
+<h4 align="center">
+Exploring Open-ended Worlds: Crafter
+</h4>
+<p><strong>CASCADE</strong></p>
+<p align="center">
+<img src="/images/cascade_crafter.gif" alt="cascade_crafter" height="100px" />
+</p>
+<p><strong>Plan2Explore</strong> (without population diversity)</p>
+<p align="center">
+<img src="/images/pp2e_crafter.gif" alt="pp2e_crafter" height="100px" />
+</p>
+
+<h4 align="center">
+Exploring Behaviors: Walker
+</h4>
+<p><strong>CASCADE</strong></p>
+<p align="right">
+<img src="/images/cascade_walker.gif" alt="cascade_walker" height="100px" />
+</p>
+<p><strong>Plan2Explore</strong> (without population diversity)</p>
+<p align="right">
+<img src="/images/pp2e_walker.gif" alt="pp2e_walker" height="100px" />
+</p>
+
+<hr />
+
+<h3 align="center">
+	Zero-shot Performance
+</h3>
+<p>Finally, we test whether the learned world models are general enough to facilitate learning downstream policies for previously unknown tasks in a zero-shot fashion as follows:</p>
+<ol>
+  <li>We provide reward labels to the world model;</li>
+  <li>We train a separate reward head;</li>
+  <li>We train a task specific behavior policy and test it in the environment.</li>
+</ol>
+
+<h3 align="center">
+Walker
+</h3>
+<p align="center">
+<img src="/images/rliable_dmc_15_deployments_new.jpg" alt="walker_iqm" height="260px" />
+</p>
+<h3 align="center">
+Atari &amp; Crafter
+</h3>
+<p align="center">
+<img src="/images/atari_all_crafter_iqm_2.jpg" alt="atari_crafter" height="260px" />
+</p>
+<h3 align="center">
+Crafter Normalized Skill Success Rate
+</h3>
+<p align="center">
+<img src="/images/crafter_skill_breakdown.jpg" alt="crafter_task_breakdown" height="200px" />
+</p>
+
+
+  </div>
+
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col">
+        <p class="feed-subscribe">
+          <a href="/feed.xml">
+            <svg class="svg-icon orange">
+              <use xlink:href="/assets/minima-social-icons.svg#rss"></use>
+            </svg><span>Subscribe</span>
+          </a>
+        </p>
+        <ul class="contact-list">
+          <li class="p-name">Yingchen Xu</li>
+          <li><a class="u-email" href="mailto:yingchen.xu.21@ucl.ac.uk">yingchen.xu.21@ucl.ac.uk</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <p>Homepage of Yingchen Xu, a CS PhD student at UCL and FAIR London.</p>
+      </div>
+    </div>
+
+    <div class="social-links"><ul class="social-media-list"><li><a rel="me" href="https://github.com/ycxuyingchen" target="_blank" title="ycxuyingchen"><svg class="svg-icon grey"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg></a></li><li><a rel="me" href="https://www.instagram.com/ycxuxu" target="_blank" title="ycxuxu"><svg class="svg-icon grey"><use xlink:href="/assets/minima-social-icons.svg#instagram"></use></svg></a></li><li><a rel="me" href="https://twitter.com/YingchenX" target="_blank" title="YingchenX"><svg class="svg-icon grey"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg></a></li><li><a href="https://scholar.google.com/citations?user=-CqyjXEAAAAJ" target="_blank" title="Google Scholar"><svg class="svg-icon grey"><use xlink:href="/assets/minima-social-icons.svg#google_scholar"></use></svg></a></li></ul>
+</div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
